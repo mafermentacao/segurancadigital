@@ -9,14 +9,31 @@
 <body> <!-- Área visível da página -->
     <main class="caixa">
         <h1>GERADOR DE SENHA AUTOMATICO</h1>
-        <input type="text" placeholder="Senha Gerada" readonly>
+        <input type="text" id="senha" placeholder="Senha Gerada" readonly>
+        <label for="quantidade"> Quantidade de Caracteres: </label>
         <input type="number" id="quantidade" value="8" min="1">
         <label>
             <input type="checkbox" id="minusculas" checked>
             LETRAS MINUSCULAS
         </label>
+        <label>
+            <input type="checkbox" id="maiusculas" checked>
+            LETRAS MAIUSCULAS
+        </label>
+        <label>
+            <input type="checkbox" id="numeros" checked>
+            NUMEROS
+        </label>
+        <label>
+            <input type="checkbox" id="especiais" checked>
+            CARACTERES ESPECIAIS
+        </label>
+        <button onclick="criarsenha()">CRIAR SENHA</button>
+        <button onclick="limparsenha()">LIMPAR</button>
+
 
     </main>
+    <script src="script.js"></script>
 
 </body>
 </html>
